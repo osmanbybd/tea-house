@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
@@ -18,6 +19,9 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+              },
+              fontfamily:{
+                manrope :['Manrope', 'serif']
               }
             }
           }
@@ -25,7 +29,7 @@
       </script>
         <title>Tea house</title>
 </head>
-<body> 
+<body class="font-manrope"> 
     <!-- header content -->
     <header class=" max-w-screen-2xl mx-auto lg:px-16 md:mx-auto md:px-8 md:flex justify-between items-center pt-8 mb-8">
         <!-- right site -->
@@ -170,7 +174,22 @@
         </div>
       </div>
      </section>
-
+<!-- section arekt baki ace -->
     </main>
+
+<!-- footer section -->
+    <footer class="bg-orange-100 py-9 px-10 md:px-16 lg:py-20">
+       <div class="w-9/12 mx-auto">
+        <!-- logo bar -->
+         <div class="flex justify-between">
+          <img src="images/cup.png" alt="">
+
+          <div class="flex items-center gap-3">
+            <h3 class="text-gray-500 text-xl font-medium ">Ready to get strated?</h3>
+            <button class="bg-red-500 py-2 px-6 rounded-lg font-semibold text-lg ">Get Started</button>
+          </div>
+         </div>
+       </div>
+    </footer>
 </body>
 </html>
